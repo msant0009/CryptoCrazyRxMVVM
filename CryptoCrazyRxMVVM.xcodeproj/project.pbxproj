@@ -13,6 +13,7 @@
 		A3A00BDB2C7643CC00B24CA3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3A00BDA2C7643CC00B24CA3 /* Base */; };
 		A3A00BDD2C7643CD00B24CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A00BDC2C7643CD00B24CA3 /* Assets.xcassets */; };
 		A3A00BE02C7643CD00B24CA3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3A00BDF2C7643CD00B24CA3 /* Base */; };
+		A3A00BEB2C76699D00B24CA3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A00BEA2C76699D00B24CA3 /* Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A3A00BDC2C7643CD00B24CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3A00BDF2C7643CD00B24CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3A00BE12C7643CD00B24CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A00BEA2C76699D00B24CA3 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		A3A00BD22C7643CC00B24CA3 /* CryptoCrazyRxMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				A3A00BD32C7643CC00B24CA3 /* AppDelegate.swift */,
-				A3A00BD52C7643CC00B24CA3 /* SceneDelegate.swift */,
-				A3A00BD72C7643CC00B24CA3 /* ViewController.swift */,
+				A3A00BE92C76689E00B24CA3 /* ViewModel */,
+				A3A00BE82C76689300B24CA3 /* Model */,
+				A3A00BE72C76687100B24CA3 /* View */,
 				A3A00BD92C7643CC00B24CA3 /* Main.storyboard */,
 				A3A00BDC2C7643CD00B24CA3 /* Assets.xcassets */,
 				A3A00BDE2C7643CD00B24CA3 /* LaunchScreen.storyboard */,
 				A3A00BE12C7643CD00B24CA3 /* Info.plist */,
 			);
 			path = CryptoCrazyRxMVVM;
+			sourceTree = "<group>";
+		};
+		A3A00BE72C76687100B24CA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3A00BD32C7643CC00B24CA3 /* AppDelegate.swift */,
+				A3A00BD52C7643CC00B24CA3 /* SceneDelegate.swift */,
+				A3A00BD72C7643CC00B24CA3 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3A00BE82C76689300B24CA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3A00BEA2C76699D00B24CA3 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A00BE92C76689E00B24CA3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A00BEB2C76699D00B24CA3 /* Crypto.swift in Sources */,
 				A3A00BD82C7643CC00B24CA3 /* ViewController.swift in Sources */,
 				A3A00BD42C7643CC00B24CA3 /* AppDelegate.swift in Sources */,
 				A3A00BD62C7643CC00B24CA3 /* SceneDelegate.swift in Sources */,
