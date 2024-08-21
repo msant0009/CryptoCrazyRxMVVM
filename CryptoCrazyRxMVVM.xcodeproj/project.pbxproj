@@ -14,6 +14,7 @@
 		A3A00BDD2C7643CD00B24CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A00BDC2C7643CD00B24CA3 /* Assets.xcassets */; };
 		A3A00BE02C7643CD00B24CA3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3A00BDF2C7643CD00B24CA3 /* Base */; };
 		A3A00BEB2C76699D00B24CA3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A00BEA2C76699D00B24CA3 /* Crypto.swift */; };
+		A3A00BEE2C766C0E00B24CA3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A00BED2C766C0E00B24CA3 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A3A00BDF2C7643CD00B24CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3A00BE12C7643CD00B24CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A00BEA2C76699D00B24CA3 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		A3A00BED2C766C0E00B24CA3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		A3A00BD22C7643CC00B24CA3 /* CryptoCrazyRxMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				A3A00BEC2C766BE700B24CA3 /* Service */,
 				A3A00BE92C76689E00B24CA3 /* ViewModel */,
 				A3A00BE82C76689300B24CA3 /* Model */,
 				A3A00BE72C76687100B24CA3 /* View */,
@@ -92,6 +95,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A3A00BEC2C766BE700B24CA3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A3A00BED2C766C0E00B24CA3 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				A3A00BEB2C76699D00B24CA3 /* Crypto.swift in Sources */,
 				A3A00BD82C7643CC00B24CA3 /* ViewController.swift in Sources */,
 				A3A00BD42C7643CC00B24CA3 /* AppDelegate.swift in Sources */,
+				A3A00BEE2C766C0E00B24CA3 /* Webservice.swift in Sources */,
 				A3A00BD62C7643CC00B24CA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
