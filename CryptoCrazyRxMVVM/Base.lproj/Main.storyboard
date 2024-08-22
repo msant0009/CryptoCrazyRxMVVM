@@ -20,45 +20,47 @@
                                 <rect key="frame" x="0.0" y="404" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-xF-ZSe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-xF-ZSe">
                                 <rect key="frame" x="0.0" y="102" width="393" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="96" id="WNR-Jh-OZM" customClass="CryptoTableViewCell" customModule="CryptoCrazyRxMVVM" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="96"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="87" id="WNR-Jh-OZM" customClass="CryptoTableViewCell" customModule="CryptoCrazyRxMVVM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WNR-Jh-OZM" id="1Fw-Iu-QI1">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRX-ce-L3J">
-                                                    <rect key="frame" x="22" y="11" width="353" height="29"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRX-ce-L3J">
+                                                    <rect key="frame" x="22" y="11" width="353" height="31"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="353" id="0lb-PF-oyx"/>
+                                                        <constraint firstAttribute="width" constant="353" id="CMC-tk-JHe"/>
+                                                        <constraint firstAttribute="height" constant="20" id="yt1-C1-Zb5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bST-wi-7dL">
-                                                    <rect key="frame" x="22" y="43" width="353" height="18"/>
+                                                    <rect key="frame" x="20" y="50" width="353" height="26"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="18" id="1kC-QD-rYt"/>
+                                                        <constraint firstAttribute="width" constant="353" id="De2-yS-0pM"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="bST-wi-7dL" firstAttribute="top" secondItem="gRX-ce-L3J" secondAttribute="bottom" constant="3" id="8fD-V9-f0o"/>
-                                                <constraint firstItem="gRX-ce-L3J" firstAttribute="leading" secondItem="1Fw-Iu-QI1" secondAttribute="leadingMargin" constant="2" id="AYk-oW-JOC"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="bST-wi-7dL" secondAttribute="bottom" constant="24" id="adz-1Y-TMZ"/>
-                                                <constraint firstItem="gRX-ce-L3J" firstAttribute="trailing" secondItem="bST-wi-7dL" secondAttribute="trailing" id="dGi-Si-nxM"/>
-                                                <constraint firstItem="gRX-ce-L3J" firstAttribute="top" secondItem="1Fw-Iu-QI1" secondAttribute="topMargin" id="nAq-AY-276"/>
-                                                <constraint firstItem="gRX-ce-L3J" firstAttribute="leading" secondItem="bST-wi-7dL" secondAttribute="leading" id="wmw-gd-eq2"/>
+                                                <constraint firstItem="bST-wi-7dL" firstAttribute="leading" secondItem="1Fw-Iu-QI1" secondAttribute="leadingMargin" id="GiL-bB-vxu"/>
+                                                <constraint firstItem="gRX-ce-L3J" firstAttribute="top" secondItem="1Fw-Iu-QI1" secondAttribute="topMargin" id="QdH-4s-9IH"/>
+                                                <constraint firstItem="gRX-ce-L3J" firstAttribute="leading" secondItem="1Fw-Iu-QI1" secondAttribute="leadingMargin" constant="2" id="dKQ-ea-Pfl"/>
+                                                <constraint firstItem="bST-wi-7dL" firstAttribute="top" secondItem="gRX-ce-L3J" secondAttribute="bottom" constant="19" id="oZd-ut-z1c"/>
+                                                <constraint firstItem="bST-wi-7dL" firstAttribute="bottom" secondItem="1Fw-Iu-QI1" secondAttribute="bottomMargin" id="p7e-vn-Vqt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="gRX-ce-L3J" id="lwa-vj-6A0"/>
                                             <outlet property="priceLabel" destination="bST-wi-7dL" id="N4F-Vc-GLw"/>
@@ -70,10 +72,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="mJL-xF-ZSe" secondAttribute="bottom" constant="-43" id="Oeg-uf-VqD"/>
-                            <constraint firstItem="mJL-xF-ZSe" firstAttribute="leading" secondItem="jtX-TZ-6oe" secondAttribute="leading" id="SQo-Ej-aiM"/>
-                            <constraint firstItem="mJL-xF-ZSe" firstAttribute="trailing" secondItem="jtX-TZ-6oe" secondAttribute="trailing" id="Xdj-2v-RHq"/>
-                            <constraint firstItem="mJL-xF-ZSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Z2E-A3-4f6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mJL-xF-ZSe" secondAttribute="bottom" constant="-43" id="EPa-4D-ZCD"/>
+                            <constraint firstItem="mJL-xF-ZSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="QQ0-RW-IoL"/>
+                            <constraint firstItem="mJL-xF-ZSe" firstAttribute="trailing" secondItem="jtX-TZ-6oe" secondAttribute="trailing" id="Ryl-lK-Ss1"/>
+                            <constraint firstItem="mJL-xF-ZSe" firstAttribute="leading" secondItem="jtX-TZ-6oe" secondAttribute="leading" id="mPi-p1-XqI"/>
                         </constraints>
                     </view>
                     <connections>
