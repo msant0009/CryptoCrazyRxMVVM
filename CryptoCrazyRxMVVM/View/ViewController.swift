@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
+    let cryptoVM = CryptoViewModel()
     var cryptoList = [Crypto]()
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +22,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-   
+        setupBindings()
+        cryptoVM.requestData()
  
+    }
+    
+    private func setupBindings() {
+        cryptoVM
+            .error
+            .observe(on: MainScheduler.asyncInstance)
+            .subscribe {errorString in
+                print(errorString)
+            }
+            .disposed(by: disposeBag)
+        
+        cryptoVM
+            .cryptos
+            .observe(on: MainScheduler.asyncInstance)
+            .subscribe { cryptos in
+                self.cryptoList = cryptos
+                self.tableView.reloadData()
+            }
+            .disposed(by: disposeBag)
+        
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
